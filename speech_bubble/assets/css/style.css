@@ -1,0 +1,37 @@
+/* CSS RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.speech_bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #71d2ff;
+    border-radius: 20px;
+    width: 250px;
+    height: 80px;
+    color: #FFF;
+    font-size: 25px;
+}
+
+.speech_bubble::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 81px;
+    margin-right: 120px;
+    border: 20px solid;
+    border-color:transparent  transparent  transparent #71d2ff ;
+
+    /* border color will define which direction the triangle will appear */
+}
